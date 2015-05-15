@@ -2,10 +2,10 @@
 All the Exercise Solution for Think Python - Version 1.1.20
 
 # Basics of Command Line Interface(CLI) - Terminal:
-### ROOT Directory: Directory at the top of the directory tree & is represented by "/"
-### HOME Directory: Directory with a name usually used to login to the machine & is represented by 
-### WORKING Directory: Directory that you are currently working in from CLI
-### Syntax for CLI commands:
+###     ROOT Directory: Directory at the top of the directory tree & is represented by "/"
+###     HOME Directory: Directory with a name usually used to login to the machine & is represented by 
+###     WORKING Directory: Directory that you are currently working in from CLI
+## Syntax for CLI commands:
     <command flags arguments>
     where:
     command: That does some specific task
