@@ -166,10 +166,10 @@ All the Exercise Solution for Think Python - Version 1.1.20
         * Display URLs that Git has stored for the shortnames to be used when 
           reading &  writing to remote:  
                 $ git remote -v
-           origin	https://github.com/archanakul/ThinkPython.git (fetch)
-            origin	https://github.com/archanakul/ThinkPython.git (push) 
+           origin	https://github.com/Username/ThinkPython.git (fetch)
+            origin	https://github.com/Username/ThinkPython.git (push) 
         * Add a new remote Git repository as a shortname you can reference           
-            $git remote add origin https://github.com/archanakul/ThinkPython.git
+            $git remote add origin https://github.com/Username/ThinkPython.git
         * To push your MASTER branch to your ORIGIN server
                 $git push -u origin master
           If you & someone else clone at the same time & they push upstream & 
