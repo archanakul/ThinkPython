@@ -81,10 +81,10 @@ All the Exercise Solution for Think Python - Version 1.1.20
             * Set your email address
                 $ git config --global user.email "your_name@domain.com"
 # Setup Github:   
-    1. Once you have created an account in Github, install a utility that allows 
+    ## Once you have created an account in Github, install a utility that allows 
        your system to authenticate with Github automatically without entring 
        username/passeword on each session      
-    2. Check if the utility is already insatlled:
+    ## Check if the utility is already insatlled:
                 $ git credential-osxkeychain
        returns below message if already installed
                 Usage: git credential-osxkeychain <get|store|erase>
@@ -92,97 +92,97 @@ All the Exercise Solution for Think Python - Version 1.1.20
             git: 'credential-osxkeychain' is not a git command. See 'git 
             --help' 
     
-    3. SSH(Secure Shell) key basically lets your computer uniquely identify 
+    ## SSH(Secure Shell) key basically lets your computer uniquely identify 
        itself when it connects to servers. 
        If Github is aware of the key your computer is using, you won’t have to 
        enter your Github username/password every time you connect.   
-    4. Check for pre-existing SSH keys on your computer if not present then 
+    ## Check for pre-existing SSH keys on your computer if not present then 
        generate a new SSH key
-            * Point the terminal to the directory that would contain SSH keys 
+            1. Point the terminal to the directory that would contain SSH keys 
               for your user account:
                         $ cd ~/.ssh  
-            * If you get the response “No such file or directory" then you need 
+            2. If you get the response “No such file or directory" then you need 
               to generate SSH key else u already have one for your machine.
-            * Create a new SSH key to use with Github if not already present 
+            3. Create a new SSH key to use with Github if not already present 
                using the email you entered while creating Github account
                          $ ssh-keygen -t rsa -C "your_email@domain.com"                                           
-            * When it asks you to enter a file name in which to save the key, 
+            4. When it asks you to enter a file name in which to save the key, 
               just press return/enter  -> SSH key goes into ~/.ssh folder
-            * You will then be asked to enter a passphrase & confirm it. Enter a 
-              secure passphrase
-      5. Add SSH key to Github:
-            * Copy the SSH key for the computer on to clicpboard
+            5. You will then be asked to enter a passphrase & confirm it. Enter 
+               a secure passphrase
+      ## Add SSH key to Github:
+            1. Copy the SSH key for the computer on to clicpboard
                  $ pbcopy < ~/.ssh/id_rsa.pub
-            * login to Github account
-            * Click Add SSH key
-            * Enter a descriptive title for the computer you’re currently on
-            * Paste your SSH key on clipboard into the Key field
-            * Click Add Key
-            * Enter your Github password
-       6.  Test the Connectivity:
-            * Try to connect to Github using your SSH key from Terminal
+            2. login to Github account
+            3. Click Add SSH key
+            4. Enter a descriptive title for the computer you’re currently on
+            5. Paste your SSH key on clipboard into the Key field
+            6. Click Add Key
+            7. Enter your Github password
+       ##  Test the Connectivity:
+            1. Try to connect to Github using your SSH key from Terminal
                     $ ssh -T git@github.com 
-            * We may see the following warning:
+            2. We may see the following warning:
                 " The authenticity of host 'github.com (207.97.227.239)'
                    cant be established. RSA key fingerprint is             
                    16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48. Are you sure 
                    you want to continue connecting (yes/no)? "
-            * Type yes & press return
-            * We will have to enter our recently selected passphrase 
-            * You should then see:
+            3. Type yes & press return
+            4. We will have to enter our recently selected passphrase 
+            5. You should then see:
                 "Hi username! You've successfully authenticated, but GitHub does 
                 not provide shell access. "   
 # How to move a bunch of files ina folder into Github repository(on Linux) :
 
-    1. Create a new repository (Name=ThinPython) on github.
-    2. Open the terminal & make the new directory
+    ## Create a new repository (Name=ThinPython) on github.
+    ## Open the terminal & make the new directory
                 $ mkdir /usr/../ThinkPython
-    3. Copy your ProjectFolder to this ThinkPython
+    ## Copy your ProjectFolder to this ThinkPython
                 $ cp -r /usr/../Chapter1-Welcome  /usr/../ThinkPython
-    4. Change the present work directory to ThinkPython.
+    ## Change the present work directory to ThinkPython.
                 $ cd /usr/../ThinkPython
-    5. Run these commands
-        * Run initialization command tocreate a git repository from working 
+    ## Run these commands
+        1. Run initialization command tocreate a git repository from working 
           directory:
                 $git init
                 
-        * Add the modified program/folder to the GIT INDEX, which is a staging 
+        2. Add the modified program/folder to the GIT INDEX, which is a staging 
           area for objects prepared to be commited.
           That means that the git now knows about the change, but the change 
           hasn’t been permanently recorded in the repository yet
                 $git add Chapter1-Welcome
                 
-        * Include the staged changes i.e Commit the files in the GIT INDEX to 
+        3. Include the staged changes i.e Commit the files in the GIT INDEX to 
           the LOCAL REPOSITORY & creates a new revision with a log
                 $git commit -m "first commit"
           -m flag: Allows us to enter the Commit message in the same line. 
                   Commit messages are normally in present tense. 
                       
-        * See which remote servers you have configured, run below
+        4. See which remote servers you have configured, run below
                 $ git remote
           Lists the shortnames of each remote handle you’ve specified. 
           If you’ve cloned your repository, you should at least see ORIGIN – 
           that is the default name Git gives to the server you cloned from  
-        * Display URLs that Git has stored for the shortnames to be used when 
+        5. Display URLs that Git has stored for the shortnames to be used when 
           reading &  writing to remote:  
                 $ git remote -v
            origin	https://github.com/Username/ThinkPython.git (fetch)
             origin	https://github.com/Username/ThinkPython.git (push) 
-        * Add a new remote Git repository as a shortname you can reference           
+        6. Add a new remote Git repository as a shortname you can reference           
             $git remote add origin https://github.com/Username/ThinkPython.git
-        * To push your MASTER branch to your ORIGIN server
+        7. To push your MASTER branch to your ORIGIN server
                 $git push -u origin master
           If you & someone else clone at the same time & they push upstream & 
           then you push upstream, your push will rightly be rejected. 
                      ! [rejected]        master -> master (non-fast-forward)
           You can fix this by fetching & merging the changes made on the remote 
           branch with the changes that you have made locally
-        * Fetches updates made to an online repository
+        8. Fetches updates made to an online repository
                 $ git fetch origin 
-        * Merges updates made online with your local work
+        9. Merges updates made online with your local work
                 $ git merge origin YOUR_BRANCH_NAME(master) 
-        * Grabs online updates & merges them with your local work can be done by 
-          just pull rather than fetch & merge:
+        10. Grabs online updates & merges them with your local work can be done 
+            by just pull rather than fetch & merge:
                 $ git pull origin YOUR_BRANCH_NAME
                        
                                   
