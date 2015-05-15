@@ -2,63 +2,63 @@
 All the Exercise Solution for Think Python - Version 1.1.20
 
 # Basics of Command Line Interface(CLI) - Terminal:
-## ROOT Directory: Directory at the top of the directory tree & is represented by "/"
-## HOME Directory: Directory with a name usually used to login to the machine & is represented by 
-## WORKING Directory: Directory that you are currently working in from CLI
-## Syntax for CLI commands:
-<command flags arguments>
-where:
-command: That does some specific task
-flags: options provided to common to trigger certain behavior, prefixed with "-" 
-arguments:  what the command is going to modify or other option for the command      
+### ROOT Directory: Directory at the top of the directory tree & is represented by "/"
+### HOME Directory: Directory with a name usually used to login to the machine & is represented by 
+### WORKING Directory: Directory that you are currently working in from CLI
+### Syntax for CLI commands:
+    <command flags arguments>
+    where:
+    command: That does some specific task
+    flags: options provided to common to trigger certain behavior, prefixed with "-" 
+    arguments:  what the command is going to modify or other option for the command      
 ## Most widely used CLI commands:
-        * $ pwd: 
+        1. $ pwd: 
             Print the current working directory
-        * $ clear: 
+        2. $ clear: 
             Clear the terminal screen
             
-        * ls:
+        3. ls:
              List working directory contents(UNHIDDEN files & directories)
-        * ls -a:
+        4. ls -a:
              List both HIDDEN (names begin with a dot (.))& UNHIDDEN working 
              directory contents
-        * ls -l: 
+        5. ls -l: 
             List working directory contents in long format i.e with details
             
-        * cd dirPath : 
+        6. cd dirPath : 
             Change working directory to given dirPath
-        * cd ..: 
+        7. cd ..: 
             Changes working directory to a folder one level up the tree
             
-        * mkdir dirName: 
+        8. mkdir dirName: 
             Creats a directory with dirName under working directory  
-        * touch fileName: 
+        9. touch fileName: 
             Creats a new file with fileName under working directory
             
-        * cp fileName dirPath: 
+        10 cp fileName dirPath: 
             Copies the the fileName under working directory to a given dirPath
-        * cp -r dirName newPath: 
+        11. cp -r dirName newPath: 
             Copies the directory & the entire subtree connected RECURSSIVELY in 
             working directory to newPath
-        * cp -r dirName/ newPath: 
+        12. cp -r dirName/ newPath: 
             Copies contents of the directory rather than the directory itself to 
             newPath
             
-        * mv fileName dirPath : 
+        13. mv fileName dirPath : 
             Moves the fileName from working directory to given dirPath
-        * mv fileName newName: 
+        14. mv fileName newName: 
             Renames the fileName in working directory to newName
             
-        * rm fileName :
+        15. rm fileName :
             Removes/delets the fileName from working directory  
-        * echo arguments:
+        16. echo arguments:
             write arguments to the standard output(Screen)
-        * date:
+        17. date:
             Display or set date & time
-        * source fileName:
+        18. source fileName:
            Takes the contents of fileName or resource & passes it to the 
            Tcl(Tool Command Line) interpreter as a text script  
-        * pbcopy
+        19. pbcopy
             Provide copying & pasting to pasteboard/Clipboard from command line     
             
 # Setup git:
