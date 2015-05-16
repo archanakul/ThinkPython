@@ -87,6 +87,7 @@ All the Exercise Solution for Think Python - Version 1.1.20
 ### C) Configuring Git identification
   1. Set your username
             $ git config --global user.name "Your Name Here"
+  
   2. Set your email address
             $ git config --global user.email "your_name@domain.com"
 
@@ -113,8 +114,9 @@ All the Exercise Solution for Think Python - Version 1.1.20
    2. If you get the response “No such file or directory" then you need to 
        generate SSH key else u already have one for your machine.
    3. Create a new SSH key to use with Github if not already present using the 
-       email you entered while creating Github account
-                $ ssh-keygen -t rsa -C "your_email@domain.com"                                           
+       email you entered while creating Github account 
+         
+                $ ssh-keygen -t rsa -C "your_email@domain.com"                                             
    4. When it asks you to enter a file name in which to save the key, just 
        press return/enter  -> SSH key goes into ~/.ssh folder
    5. You will then be asked to enter a passphrase & confirm it. Enter a secure 
@@ -122,6 +124,7 @@ All the Exercise Solution for Think Python - Version 1.1.20
 
 ### E) Add SSH key to Github:
    1. Copy the SSH key for the computer on to clipboard
+   
             $ pbcopy < ~/.ssh/id_rsa.pub
    2. login to Github account
    3. Click Add SSH key
@@ -132,15 +135,18 @@ All the Exercise Solution for Think Python - Version 1.1.20
 
 ### F) Test the Connectivity:
    1. Try to connect to Github using your SSH key from Terminal
-            $ ssh -T git@github.com 
+   
+            $ ssh -T git@github.com    
    2. We may see the following warning:
+   
             "The authenticity of host 'github.com (207.97.227.239)'
              cant be established. RSA key fingerprint is             
              16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48. Are you sure 
-             you want to continue connecting (yes/no)? "
+             you want to continue connecting (yes/no)? "         
    3. Type yes & press return
    4. We will have to enter our recently selected passphrase 
    5. You should then see:
+   
             "Hi username! You've successfully authenticated, but GitHub does 
              not provide shell access. "   
 
@@ -154,26 +160,32 @@ All the Exercise Solution for Think Python - Version 1.1.20
         $ cd /usr/../ThinkPython
 ### E) Run these commands
    1. Run initialization command tocreate a git repository from working directory:
+   
             $git init            
   2. Add the modified program/folder to the GIT INDEX, which is a staging area for objects prepared to be commited.
 That means that the git now knows about the change, but the change hasn’t been permanently recorded in the repository yet
+           
             $git add Chapter1-Welcome            
    3. Include the staged changes i.e Commit the files in the GIT INDEX to the LOCAL REPOSITORY & creates a new revision with a log
+           
             $git commit -m "first commit"
             -m flag: Allows us to enter the Commit message in the same line. 
                      Commit messages are normally in present tense.                   
    4. See which remote servers you have configured, run below
+            
             $ git remote
     Lists the shortnames of each remote handle you’ve specified. 
     If you’ve cloned your repository, you should at least see ORIGIN – 
     that is the default name Git gives to the server you cloned from  
    5. Display URLs that Git has stored for the shortnames to be used when reading &  writing to remote:
+           
             $ git remote -v
         origin	https://github.com/Username/ThinkPython.git (fetch)
         origin	https://github.com/Username/ThinkPython.git (push) 
    6. Add a new remote Git repository as a shortname you can reference
             $git remote add origin https://github.com/Username/ThinkPython.git 
    7. To push your MASTER branch to your ORIGIN server
+            
             $git push -u origin master
       If you & someone else clone at the same time & they push upstream & 
       then you push upstream, your push will rightly be rejected. 
@@ -182,10 +194,13 @@ That means that the git now knows about the change, but the change hasn’t been
       You can fix this by fetching & merging the changes made on the remote 
       branch with the changes that you have made locally
    8. Fetches updates made to an online repository
+           
             $ git fetch origin 
    9. Merges updates made online with your local work
+           
             $ git merge origin YOUR_BRANCH_NAME(master) 
    10. Grabs online updates & merges them with your local work can be done by just pull rather than fetch & merge:
+            
             $ git pull origin YOUR_BRANCH_NAME
                        
                                   
