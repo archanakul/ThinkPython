@@ -77,7 +77,7 @@ All the Exercise Solution for Think Python - Version 1.1.20
    1. We need to make sure the Terminal goes through the correct order 
        of folders to discover your newer version of Git.
             
-            $ echo "export     PATH=/usr/local/git/bin:/usr/local/bin:/usr/local/sbin:$PATH" >> ~/.bash_profile
+            $ echo "export PATH=/usr/local/git/bin:/usr/local/bin:/usr/local/sbin:$PATH" >> ~/.bash_profile
         
    2. Tell the Terminal to look at your bash_profile to get the updated order of 
       folders (your "$PATH").
@@ -86,9 +86,10 @@ All the Exercise Solution for Think Python - Version 1.1.20
 
 ### C) Configuring Git identification
   1. Set your username
+            
             $ git config --global user.name "Your Name Here"
-  
   2. Set your email address
+            
             $ git config --global user.email "your_name@domain.com"
 
 # Setup Github:   
@@ -110,6 +111,7 @@ All the Exercise Solution for Think Python - Version 1.1.20
 ### D) Check for pre-existing SSH keys on your computer if not present then generate a new SSH key
    1. Point the terminal to the directory that would contain SSH keysfor your 
        user account:
+       
                 $ cd ~/.ssh  
    2. If you get the response “No such file or directory" then you need to 
        generate SSH key else u already have one for your machine.
@@ -162,7 +164,7 @@ All the Exercise Solution for Think Python - Version 1.1.20
    1. Run initialization command tocreate a git repository from working directory:
    
             $git init            
-  2. Add the modified program/folder to the GIT INDEX, which is a staging area for objects prepared to be commited.
+   2. Add the modified program/folder to the GIT INDEX, which is a staging area for objects prepared to be commited.
 That means that the git now knows about the change, but the change hasn’t been permanently recorded in the repository yet
            
             $git add Chapter1-Welcome            
@@ -183,6 +185,7 @@ That means that the git now knows about the change, but the change hasn’t been
         origin	https://github.com/Username/ThinkPython.git (fetch)
         origin	https://github.com/Username/ThinkPython.git (push) 
    6. Add a new remote Git repository as a shortname you can reference
+   
             $git remote add origin https://github.com/Username/ThinkPython.git 
    7. To push your MASTER branch to your ORIGIN server
             
