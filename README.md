@@ -9,13 +9,16 @@ B) HOME Directory: Directory with a name usually used to login to the machine & 
 C) WORKING Directory: Directory that you are currently working in from CLI.
 
 D) Syntax for CLI commands:
-    <command flags arguments>
-    where:
-    command: That does some specific task
-    flags: options provided to common to trigger certain behavior, prefixed with "-" 
-    arguments:  what the command is going to modify or other option for the command      
+            <command flags arguments>
+        where:
+        command: That does some specific task
+        flags: Options provided to common to trigger certain behavior, prefixed 
+               with "-" 
+        arguments: What the command is going to modify or other option for the 
+                   command      
 
 E) Most widely used CLI commands:
+    
     1. $ pwd: 
             Print the current working directory
     2. $ clear: 
@@ -60,10 +63,10 @@ E) Most widely used CLI commands:
     17. date:
             Display or set date & time
             
-   18. source fileName:
+    18. source fileName:
            Takes the contents of fileName or resource & passes it to the 
            Tcl(Tool Command Line) interpreter as a text script  
-   19. pbcopy
+    19. pbcopy
             Provide copying & pasting to pasteboard/Clipboard from command line     
             
 # Setup git:
