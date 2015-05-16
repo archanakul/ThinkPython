@@ -92,9 +92,9 @@ All the Exercise Solution for Think Python - Version 1.1.20
 # Setup Github:   
 ### Once you have created an account in Github:
     Install a utility that allows your system to authenticate with Github    
-    automatically without entring username/passeword on each session      
+    automatically without entring username/password on each session      
 
-## Check if the utility is already insatlled:
+## Check if the utility is already installed:
         $ git credential-osxkeychain
     returns below message if already installed
         Usage: git credential-osxkeychain <get|store|erase>
@@ -149,47 +149,47 @@ All the Exercise Solution for Think Python - Version 1.1.20
          "Hi username! You've successfully authenticated, but GitHub does 
           not provide shell access. "   
 
-# How to move a bunch of files ina folder into Github repository(on Linux) :
+# How to move a bunch of files in a folder into Github repository(on Linux) :
 
-### Create a new repository (Name=ThinPython) on github.
-### 1. Open the terminal & make the new directory
+### 1.Create a new repository (Name=ThinPython) on github.
+### 2. Open the terminal & make the new directory
         $ mkdir /usr/../ThinkPython
-### 2. Copy your ProjectFolder to this ThinkPython
+### 3. Copy your ProjectFolder to this ThinkPython
         $ cp -r /usr/../Chapter1-Welcome  /usr/../ThinkPython
-### 3. Change the present work directory to ThinkPython.
+### 4. Change the present work directory to ThinkPython.
         $ cd /usr/../ThinkPython
-## 4. Run these commands
-   1. Run initialization command tocreate a git repository from working directory:
+## 5. Run these commands
+   Run initialization command tocreate a git repository from working directory:
             
             $git init
                 
-   2. Add the modified program/folder to the GIT INDEX, which is a staging area for objects prepared to be commited.
+  Add the modified program/folder to the GIT INDEX, which is a staging area for objects prepared to be commited.
 That means that the git now knows about the change, but the change hasn’t been permanently recorded in the repository yet
            
             $git add Chapter1-Welcome
                 
-   3. Include the staged changes i.e Commit the files in the GIT INDEX to the LOCAL REPOSITORY & creates a new revision with a log
+   Include the staged changes i.e Commit the files in the GIT INDEX to the LOCAL REPOSITORY & creates a new revision with a log
         
         $git commit -m "first commit"
         -m flag: Allows us to enter the Commit message in the same line. 
                  Commit messages are normally in present tense. 
                       
-   4. See which remote servers you have configured, run below
+   See which remote servers you have configured, run below
                 
                 $ git remote
     Lists the shortnames of each remote handle you’ve specified. 
     If you’ve cloned your repository, you should at least see ORIGIN – 
     that is the default name Git gives to the server you cloned from  
    
-   5. Display URLs that Git has stored for the shortnames to be used when reading &  writing to remote:  
+   Display URLs that Git has stored for the shortnames to be used when reading &  writing to remote:  
             
             $ git remote -v
         origin	https://github.com/Username/ThinkPython.git (fetch)
         origin	https://github.com/Username/ThinkPython.git (push) 
-   6. Add a new remote Git repository as a shortname you can reference           
+   Add a new remote Git repository as a shortname you can reference           
             
             $git remote add origin https://github.com/Username/ThinkPython.git
-   7. To push your MASTER branch to your ORIGIN server
+   To push your MASTER branch to your ORIGIN server
             
             $git push -u origin master
       If you & someone else clone at the same time & they push upstream & 
@@ -198,13 +198,13 @@ That means that the git now knows about the change, but the change hasn’t been
             ! [rejected]        master -> master (non-fast-forward)
       You can fix this by fetching & merging the changes made on the remote 
       branch with the changes that you have made locally
-   8. Fetches updates made to an online repository
+   Fetches updates made to an online repository
             
             $ git fetch origin 
-   9. Merges updates made online with your local work
+   Merges updates made online with your local work
            
             git merge origin YOUR_BRANCH_NAME(master) 
-   10. Grabs online updates & merges them with your local work can be done by just pull rather than fetch & merge:
+   Grabs online updates & merges them with your local work can be done by just pull rather than fetch & merge:
             
             git pull origin YOUR_BRANCH_NAME
                        
