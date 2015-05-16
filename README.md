@@ -2,62 +2,62 @@
 All the Exercise Solution for Think Python - Version 1.1.20
 
 # Basics of Command Line Interface(CLI) - Terminal:
-#### a. ROOT Directory: Directory at the top of the directory tree & is represented by "/".
+A) ROOT Directory: Directory at the top of the directory tree & is represented by "/".
    
-#### b. HOME Directory: Directory with a name usually used to login to the machine & is represented by. 
+B) HOME Directory: Directory with a name usually used to login to the machine & is represented by. 
    
-#### c. WORKING Directory: Directory that you are currently working in from CLI.
+C) WORKING Directory: Directory that you are currently working in from CLI.
 
-### d. Syntax for CLI commands:
+D) Syntax for CLI commands:
     <command flags arguments>
     where:
     command: That does some specific task
     flags: options provided to common to trigger certain behavior, prefixed with "-" 
     arguments:  what the command is going to modify or other option for the command      
 
-### e. Most widely used CLI commands:
-   1. $ pwd: 
+E) Most widely used CLI commands:
+    1. $ pwd: 
             Print the current working directory
-   2. $ clear: 
+    2. $ clear: 
             Clear the terminal screen
             
-   3. ls:
+    3. ls:
              List working directory contents(UNHIDDEN files & directories)
-   4. ls -a:
+    4. ls -a:
              List both HIDDEN (names begin with a dot (.))& UNHIDDEN working 
              directory contents
-   5. ls -l: 
+    5. ls -l: 
             List working directory contents in long format i.e with details
             
-   6. cd dirPath : 
+    6. cd dirPath : 
             Change working directory to given dirPath
-   7. cd ..: 
+    7. cd ..: 
             Changes working directory to a folder one level up the tree
             
-   8. mkdir dirName: 
+    8. mkdir dirName: 
             Creats a directory with dirName under working directory  
-   9. touch fileName: 
+    9. touch fileName: 
             Creats a new file with fileName under working directory
             
-   10. cp fileName dirPath: 
+    10. cp fileName dirPath: 
             Copies the the fileName under working directory to a given dirPath
-   11. cp -r dirName newPath: 
+    11. cp -r dirName newPath: 
             Copies the directory & the entire subtree connected RECURSSIVELY in 
             working directory to newPath
-   12. cp -r dirName/ newPath: 
+    12. cp -r dirName/ newPath: 
             Copies contents of the directory rather than the directory itself to 
             newPath
             
-   13. mv fileName dirPath : 
+    13. mv fileName dirPath : 
             Moves the fileName from working directory to given dirPath
-   14. mv fileName newName: 
+    14. mv fileName newName: 
             Renames the fileName in working directory to newName
             
-   15. rm fileName :
+    15. rm fileName :
             Removes/delets the fileName from working directory  
-   16. echo arguments:
+    16. echo arguments:
             write arguments to the standard output(Screen)
-   17. date:
+    17. date:
             Display or set date & time
             
    18. source fileName:
